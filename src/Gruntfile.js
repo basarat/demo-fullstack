@@ -38,8 +38,17 @@ module.exports = function (grunt) {
 
         },
 
+        concurrent: {
+            options: {
+                logConcurrentOutput: true,
+            },
+            fullstack: ['ts:server', 'ts:client'],
+        }
+
     });
 
     grunt.loadNpmTasks("grunt-ts");
-    grunt.registerTask("default", ["ts:server"]);
+    grunt.loadNpmTasks('grunt-concurrent');
+
+    grunt.registerTask("default", ["concurrent"]);
 };

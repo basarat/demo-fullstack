@@ -2,5 +2,6 @@
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-ts": "latest",
+    "grunt-concurrent": "~0.4.3"
   }
 }
