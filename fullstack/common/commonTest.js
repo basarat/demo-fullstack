@@ -2,4 +2,4 @@ function helloCommon() {
     return "Express";
 }
 
-export = helloCommon;
+module.exports = helloCommon;

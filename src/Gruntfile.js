@@ -1,9 +1,9 @@
 module.exports = function (grunt) {
     "use strict";
 
-    var commonFiles = ["common/**/*.ts"];
-    var serverFiles = ["server/**/*.ts"];
-    var clientFiles = ["client/**/*.ts"];
+    var commonFiles = "common/**/*.ts";
+    var serverFiles = ["server/**/*.ts", commonFiles];
+    var clientFiles = ["client/**/*.ts", commonFiles];
 
     grunt.initConfig({
         ts: {

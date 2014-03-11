@@ -1,3 +1,3 @@
-define(["require", "exports", './test/test'], function(require, exports, foo) {
-    foo();
+define(["require", "exports", '../common/commonTest'], function(require, exports, foo) {
+    console.log(foo());
 });
