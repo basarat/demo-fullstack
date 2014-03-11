@@ -1,9 +1,9 @@
 module.exports = function (grunt) {
     "use strict";
 
-    var commonFiles = "common/**/*.ts";
-    var serverFiles = ["server/**/*.ts", commonFiles];
-    var clientFiles = ["client/**/*.ts", commonFiles];
+    var commonFiles = ["common/**/*.ts"];
+    var serverFiles = ["server/**/*.ts"];
+    var clientFiles = ["client/**/*.ts"];
 
     grunt.initConfig({
         ts: {
@@ -20,6 +20,7 @@ module.exports = function (grunt) {
                 fast: true,
                 src: serverFiles,
                 outDir: '../fullstack',
+                baseDir: '.',
                 watch: '.',
                 options: {
                     module: 'commonjs',
@@ -29,7 +30,8 @@ module.exports = function (grunt) {
             client: {
                 fast: true,
                 src: clientFiles,
-                outDir: '../fullstack/public/js',
+                outDir: '../fullstack/server/public/js',
+                baseDir: '.',
                 watch: '.',
                 options: {
                     module: 'amd',
