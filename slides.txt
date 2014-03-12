@@ -8,3 +8,15 @@ demo common file
 
 
 Benifit: get dev time intellisense, deploy time build reliability.
+
+
+
+
+
+
+
+
+
+
+How many people use F# or wish they could?
+twitter: @basarat
