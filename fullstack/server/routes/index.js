@@ -1,7 +1,7 @@
-var foo = require('../../common/commonTest');
+var commonTest = require('../../common/commonTest');
 
 function index(req, res) {
-    res.render('index', { title: foo() });
+    res.render('index', { title: commonTest() });
 }
 exports.index = index;
 ;

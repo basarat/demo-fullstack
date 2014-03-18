@@ -1,8 +1,7 @@
 define(["require", "exports"], function(require, exports) {
     function helloCommon() {
-        return "Express";
+        return "Hello from Common";
     }
-
     
     return helloCommon;
 });

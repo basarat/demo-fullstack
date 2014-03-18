@@ -1,2 +1,4 @@
-import foo = require('../common/commonTest');
-console.log(foo());
+///ts:import=commonTest
+import commonTest = require('../common/commonTest'); ///ts:import:generated
+
+console.log(commonTest());

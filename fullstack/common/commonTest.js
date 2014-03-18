@@ -1,5 +1,4 @@
 function helloCommon() {
-    return "Express";
+    return "Hello from Common";
 }
-
 module.exports = helloCommon;
