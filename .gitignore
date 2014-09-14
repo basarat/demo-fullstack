@@ -1,1 +1,3 @@
-ignoreBaseDirFile.ts
+.baseDir.ts
+.baseDir.js
+.tscache

@@ -4,11 +4,13 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
 
+    <script src="/vendor/angular/angular.js"></script>
 	<script src="/vendor/requirejs/require.js" data-main="/vendor/requirejs.config.js"></script>
 
   </head>
-  <body>
+  <body ng-controller="TestController">
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    <button ng-click="vm.test()">Log to console</button>
   </body>
 </html>
