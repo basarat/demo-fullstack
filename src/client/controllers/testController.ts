@@ -11,7 +11,7 @@ class TestController {
     }
 
     test() {
-        commonTest();
+        console.log(commonTest());
     }
 }
 

@@ -5,7 +5,7 @@ define(["require", "exports", '../angularModules', '../../common/commonTest'], f
             $scope.vm = this;
         }
         TestController.prototype.test = function () {
-            commonTest();
+            console.log(commonTest());
         };
         TestController.$inject = ['$scope'];
         return TestController;

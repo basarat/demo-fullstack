@@ -2,4 +2,6 @@ define(["require", "exports", './angularModules', './controllers/testController'
     exports.angularModules = angularModules_file;
 
     exports.testController = testController_file;
+
+    var $injector = angular.bootstrap(document, [exports.angularModules.mainModuleName]);
 });

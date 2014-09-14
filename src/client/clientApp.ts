@@ -6,3 +6,4 @@ export var testController = testController_file; ///ts:export:generated
 
 
 // Kick off application 
+var $injector = angular.bootstrap(document, [angularModules.mainModuleName]);
