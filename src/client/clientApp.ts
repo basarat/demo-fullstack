@@ -1,6 +1,3 @@
-
-// Load everything SPA style: 
-
 ///ts:export=client
 import angularModules_file = require('./angularModules'); ///ts:export:generated
 export var angularModules = angularModules_file; ///ts:export:generated

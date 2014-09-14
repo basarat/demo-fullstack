@@ -26,7 +26,7 @@ module.exports = function (grunt) {
                 target: 'es5',                 // target javascript language. [es3 (default) | es5]
                 module: 'amd',                 // target javascript module style. [amd (default) | commonjs]                
                 declaration: false,            // generate a declaration .d.ts file for every output js file. [true | false (default)]
-                fast: true,
+                fast: 'always',
             },
 
             server: {                
@@ -42,6 +42,11 @@ module.exports = function (grunt) {
                 src: clientFiles,
                 outDir: '../fullstack/server/public/js',
                 baseDir: '.',
+                templateCache: {
+                    baseUrl: 'src/app',
+                    src: ['src/app/**/*.html'],
+                    dest: 'src/app/templateCache.ts',
+                },
                 options: {
                     module: 'amd',
                 },
