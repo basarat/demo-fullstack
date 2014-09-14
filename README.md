@@ -1,12 +1,10 @@
-# Seperate Destination Directories
-have a destination directory
-compile each file on its own 
-use AMD / commonjs. 
+# Basics
+Uses `grunt-ts`. 
+just run `grunt` from `src` directory. 
+
+src is compiled to `fullstack` folder. 
+Front end (angular) and back end (express/nodejs) share source code by compiling each file on its own target. (use AMD for frontend and commonjs for backend) 
 
 # Important Files
-demo gruntfile.js
-demo common shared source file
-
-
-# Why
-Benefit: get dev time intellisense, deploy time build reliability.
+Gruntfile.js
+The source code in the `common` directory is shared
