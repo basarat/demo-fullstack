@@ -1,0 +1,10 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "fullstack/package.json",
+        "src/package.json"
+      ]
+    }
+  }
+}
