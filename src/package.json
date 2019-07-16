@@ -1,8 +1,8 @@
 {
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-ts": "1.11.11",
-    "grunt-concurrent": "~0.4.3",
-    "grunt-contrib-watch": "~0.6.0"
+    "grunt": "~1.0.4",
+    "grunt-ts": "5.5.1",
+    "grunt-concurrent": "~3.0.0",
+    "grunt-contrib-watch": "~1.1.0"
   }
 }
